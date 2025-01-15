@@ -1,7 +1,7 @@
 project_name: bunster
 builds:
   - id: bunster
-    main: ./cmd/bunster
+    main: ./
     binary: bunster_{{ .Os }}-{{ .Arch }}
     goos:
       - linux
