@@ -18,9 +18,6 @@ archives:
       - bunster
     format: tar.gz
     name_template: "{{ .ProjectName }}_{{ .Os }}-{{ .Arch }}"
-    files:
-      - LICENSE
-      - README.md
 
 checksum:
   name_template: "checksums.txt"
