@@ -11,8 +11,8 @@ builds:
       - amd64
       - arm64
       - 386
-      
-  archives:
+
+archives:
   - id: bunster_archive
     builds:
       - bunster
@@ -21,6 +21,6 @@ builds:
     files:
       - LICENSE
       - README.md
-      
+
 checksum:
   name_template: "checksums.txt"
