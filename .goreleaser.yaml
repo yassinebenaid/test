@@ -10,7 +10,7 @@ builds:
     goarch:
       - amd64
       - arm64
-      - 386
+      - "386"
 
 archives:
   - id: bunster_archive
