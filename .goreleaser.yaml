@@ -11,16 +11,5 @@ builds:
       - amd64
       - arm64
       - 386
-archives:
-  - id: bunster_archive
-    builds:
-      - bunster
-    format: tar.gz
-    name_template: "{{ .ProjectName }}_{{ .Version }}_{{ .Os }}-{{ .Arch }}"
-    files:
-      - LICENSE
-      - README.md
-    replacements:
-      darwin: macos
 checksum:
   name_template: "checksums.txt"
