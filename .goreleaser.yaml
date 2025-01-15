@@ -1,5 +1,4 @@
 version: 2
-project_name: bunster
 builds:
   - id: bunster
     main: ./
