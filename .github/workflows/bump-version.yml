@@ -1,0 +1,23 @@
+name: Bump version 
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+jobs:
+  update-version:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        ref: master
+
+    - name: bump the version
+      run: echo "${{ github.ref_name }}" > VERSION
+
+    - name: push new version back
+      uses: stefanzweifel/git-auto-commit-action@v5
+      with:
+        commit_message: Bump the release version
