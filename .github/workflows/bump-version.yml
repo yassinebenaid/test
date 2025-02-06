@@ -23,6 +23,7 @@ jobs:
         commit_message: Bump the release version
 
   goreleaser:
+    needs: update-version
     runs-on: ubuntu-latest
     steps:
       -
