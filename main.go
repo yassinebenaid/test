@@ -8,4 +8,9 @@ var version string
 
 func main() {
 	fmt.Println(version)
+
+	info, ok := debug.ReadBuildInfo()
+	if ok {
+		fmt.Println(info.Main.Version)
+	}
 }
