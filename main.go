@@ -2,6 +2,8 @@ package main
 
 import "fmt"
 import _ "embed"
+import "runtime/debug"
+
 
 //go:embed VERSION
 var version string
